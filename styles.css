@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Norse;
+    src: url("./res/font/Norse-Bold.otf");
+}
+
+:root {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+img.background-img {
+    width: inherit;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+img.odin-logo {
+    width: 20%;
+    height: auto;
+}
+
+.odin-logo-background {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 24%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.odin-text {
+    font-family: 'Norse';
+    align-self: center;
+    font-size: 96px;
+}
+
+.side-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 100vh;
+    background-image: url("./res/images/halie-west-bTzpau9mKT4-unsplash.jpg");
+}
+
+.credits {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+span, a {
+    font-size: small;
+}
+
+.side-design a {
+    color: white;
+}
+
+.sign-up-area a {
+    color:  #596D48;
+}
+
+.sign-up-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: #EEEEEEEE;
+
+    flex: 1 1 auto;
+}
+
+.fields {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 4px lightgray;
+    padding: 26px 0px;
+}
+
+form > *, .fields > * {
+    padding-left: 26px;
+}
+
+label {
+    display: block;
+    color: hsl(228, 100%, 10%);
+    font-size: 10px;
+}
+
+input {
+    display: block;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+input:required, input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid lightgray;
+}
+
+input:focus {
+    border: none;
+    border: 1px solid blue;
+    background-color: #EEEEEEEE;
+    box-shadow: 1px 1px 4px lightgray;
+}
+
+input:invalid + span::after {
+    font-size: 10px;
+    color: red;
+    content: '* Passwords do not match';
+}
+
+.field-group {
+    display: flex;
+    gap: 96px;
+    margin: 26px 0px;
+}
+
+.field-group > div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.field-group > div > input {
+    height: 20px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    
+    margin-left: 26px;
+    width: 200px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #596D48;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 0px 6px 4px lightgray;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px gray;
+}
+
+.statements {
+    font-weight: bold;
+    margin-left: 26px;
+    margin-bottom: 16px;
+    width: 440px;
+}
+
+h2 {
+    margin: 0;
+    font-size: large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
